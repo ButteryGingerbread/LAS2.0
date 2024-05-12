@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityBorrow">
+
+    <EditText
+        android:id="@+id/etStudentID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student ID"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"
+        android:maxLength="8"/>
+
+    <EditText
+        android:id="@+id/etBookID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book ID"
+        android:layout_below="@id/etStudentID"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"
+        android:maxLength="13"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_below="@id/etBookID"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Book Details Below:"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textSize="24dp"
+        android:layout_below="@id/texttitle"
+        android:inputType="text"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp" />
+
+    <EditText
+        android:id="@+id/author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Author"
+        android:textSize="24dp"
+        android:layout_below="@id/title"
+        android:inputType="text"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:textSize="24dp"
+        android:layout_below="@id/author"
+        android:inputType="number"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp" />
+
+    <EditText
+        android:id="@+id/bookid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="BookID"
+        android:textSize="24dp"
+        android:layout_below="@id/amount"
+        android:inputType="number"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Add Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/bookid"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Update Data"
+        android:layout_below="@id/btnAdd"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete Existing Data"
+        android:layout_below="@id/btnUpdate"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"/>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View Data"
+        android:layout_below="@id/btnDelete"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnView"
+        android:textSize="14dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:text="Field to enter:\nFor Add: title, author, amount\nFor Update: bookid, title, author\nFor Delete: bookid\nForView: nothing"/>
+</RelativeLayout>
